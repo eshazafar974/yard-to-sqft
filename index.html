@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YARD TO SQFT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <h1>
+            YARD TO SQUAREFEET CONVERTER
+        </h1>
+        
+        
+        <div class="container">
+            <form id="calc Yard" onsubmit="calcYard(); return false">
+           <label for="value"> Enter Value:</label>
+           <br>
+           <input type="number" id="value" step="0.01" placeholder="Enter a value">
+           <label for="conversion-type">Select Conversion:</label>
+           <select id="conversion-type">
+    <option value="yardToSqft">Yard to Square Feet</option>
+    <option value="sqftToyard">Square Feet to Yard</option>
+            
+           </select>
+          <button onclick="convert()">Convert</button>
+          <p id="result"></p>
+        </div>
+        <script src="script.mjs"></script>
+    </body>
+    </html>
+</body>
+</html>
